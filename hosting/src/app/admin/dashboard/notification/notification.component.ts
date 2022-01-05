@@ -26,7 +26,7 @@ export class NotificationComponent implements OnInit {
     if (this.title && this.body) {
       const headers = new HttpHeaders()
         .set('Content-Type', 'application/json')
-        .set('Authorization', 'key=AAAAbFbGfVQ:APA91bEsJz0H3tcYxVI4whhWlepuifGBOReoozm7mAdyPwPG-CM6VjhwvRjTTHEIJeKB-cbS6yFyT9Vz-pyP3P5JFmhWk0V9I_-niqw7hifRBihciSAG59VYDvyxdWQhW5M0lMs1fTt_');
+        .set('Authorization', 'key=...');
 
       this.http.post('https://fcm.googleapis.com/fcm/send', {
         notification: {
